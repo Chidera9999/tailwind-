@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>product card</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="pb-24 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-50 to-white">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">Product Card Component</h2>
+
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+
+<!-- Product Card -->
+<div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 flex flex-col h-full">
+<!-- Image -->
+<div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+<img
+src="https://images.unsplash.com/photo-1704440278730-b420f5892700?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+alt="Product"
+class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+>
+<div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
+-20%
+</div>
+</div>
+
+<!-- Content -->
+<div class="p-5 flex flex-col flex-grow">
+<h3 class="text-lg font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors line-clamp-2">
+Wireless Noise Cancelling Headphones
+</h3>
+
+<div class="mt-2 flex items-center gap-3">
+<span class="text-2xl font-bold text-gray-900">$149</span>
+<span class="text-lg text-gray-500 line-through">$189</span>
+</div>
+
+<p class="mt-3 text-gray-600 text-sm line-clamp-3 flex-grow">
+Premium over-ear headphones with active noise cancellation, 40-hour battery life, and crystal-clear sound quality.
+</p>
+
+<!-- Button -->
+<button class="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+Add to Cart
+</button>
+</div>
+</div>
+
+<!-- Repeated cards (you can duplicate the above block) -->
+<div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 flex flex-col h-full">
+<div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+<img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<h3 class="text-lg font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors">Mechanical Keyboard RGB</h3>
+<div class="mt-2 flex items-center gap-3">
+<span class="text-2xl font-bold text-gray-900">$89</span>
+</div>
+<p class="mt-3 text-gray-600 text-sm line-clamp-3 flex-grow">Hot-swappable, gasket mount, tri-mode wireless mechanical keyboard.</p>
+<button class="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+Add to Cart
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
